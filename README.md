@@ -20,13 +20,14 @@ Documentation for the stop and frisk data API
 
 
 The data api is structured on RESTful semantics rather than SQL semantics. 
-There are essentially three kinds of API endpoints: overview, totals, and details.  They nest arbitrarily deeply though, so I'll provide a couple of examples in a semi-narrative form:
+There are essentially three kinds of API endpoints: overview, totals, and details. 
 
 
 #### Base URL
-{{% highlight %}}
-http://halcyon.boldprogressives.org:8000/v1/ 
-{{% endhighlight %}}
+
+```
+http://api.occupy-data.org/stopandfrisk/v1/ 
+```
 
 This just gives an overview of the data, including the total number of records in the system, and all the columns that exist on the data
 
