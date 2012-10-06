@@ -117,7 +117,14 @@ A "totals" resource which lets you filter to a particular value of a particular 
 
 #### Details
 
-A "details" resource which lets you return the actual detailed results you've filtered to.  You just do this by appending "?detail" to the previous URL.  So, for example: http://api.occupy-data.org/stopandfrisk/v1/haircolr/WH?results gives you all the full data about all the white-haired people in the database.
+A "details" resource which lets you return the actual detailed results you've filtered to.  You just do this by appending "?detail" to the previous URL.  So, for example: http://api.occupy-data.org/stopandfrisk/v1/haircolr/WH?detail gives you all the full data about all the white-haired people in the database.
+
+#### Limiting Queries
+
+You can limit the "details" resource to particular columns by appending one or more "&value=" strings to the URL.
+
+For example, http://api.occupy-data.org/stopandfrisk/v1/haircolr/WH?results&value=age&value=eyecolor&value=loc just returns the age, eye color, and lat/lng of all the white-haired people in the database.
+
 
 
 
@@ -132,6 +139,39 @@ http://api.occupy-data.org/stopandfrisk/v1/haircolr/WH/age/41/?results
 shows you all the 41-year-old white haired people
 
 http://api.occupy-data.org/stopandfrisk/v1/haircolr/WH/age/41/pct shows the precincts in which there are any 41-year-old white haired people, and so on.
+
+
+Operators
+
+```
+"$gt",
+"$lt",
+"$between"
+```
+
+```
+Base URL + column to query + '/' + $operator + '=' + value
+```
+
+http://api.occupy-data.org/stopandfrisk/v1/haircolr/WH/age/$gt/10
+
+
+#### OR 
+
+You can also filter with ORs by repeating a column twice anywhere in the URL.
+
+  So http://api.occupy-data.org/stopandfrisk/v1/haircolr/WH/age/41/haircolr/BK/haircolr/BR shows the precincts in which there are any 41 year olds with either white, black or brown hair.
+
+
+
+#### Geospatial Queries
+
+http://api.occupy-data.org/stopandfrisk/v1/loc/$near=-73.88:40.78:1.3/?results&value=loc&value=race&value=sex
+
+Returns All results within 1.3 miles of (-73.88, 40.78)
+
+
+
 
 
 
