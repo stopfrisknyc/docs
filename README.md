@@ -31,7 +31,7 @@ There are essentially three kinds of API endpoints: overview, totals, and detail
 http://api.occupy-data.org/stopandfrisk/v1/ 
 ```
 
- The base URL returns the columns that are indexed in the database. These are the only columns that you can use to "begin" a search.
+The base URL returns the columns that are indexed in the database. These are the only columns that you can use to "begin" a search.
 
 You can also view columns for other queries, like http://api.occupy-data.org/stopandfrisk/v1/haircolr/BK
 
@@ -39,77 +39,6 @@ In this case, it returns all the columns, whether or not they're indexed.
 
 In general, the "columns" data is always used to determine what columns are available for filtering the CURRENT results by. For the base URL it has to be an indexed column, but for other URLs it can be any column (with a few edge-case exceptions, like if you've already used that column with an operator)
 
-```
-{
-records: 4259606,
-columns: [
-"_id",
-"race",
-"forceuse",
-"frisk",
-"pct",
-"datetime_dayofweek",
-"datetime_month",
-"datetime",
-"datetime_time",
-"loc",
-"sector",
-"cs_objcs",
-"crossst",
-"radio",
-"rf_knowl",
-"ac_other",
-"explnstp",
-"rf_verbl",
-"rf_othsw",
-"premname",
-"officrid",
-"rf_rfcmp",
-"perstop",
-"pf_ptwep",
-"riflshot",
-"knifcuti",
-"typeofid",
-"linecm",
-"beat",
-"cs_other",
-"pf_hcuff",
-"aptnum",
-"pistol",
-"rf_vcrim",
-"ac_rept",
-"compyear",
-"x",
-"addrpct",
-"comppct",
-"weight",
-"offverb",
-"revcmd",
-"sex",
-"haircolr",
-"year",
-"OGC_FID",
-"ser_num",
-"ht_inch",
-"timestop",
-"machgun",
-"state",
-"contrabn",
-"arstmade",
-"ac_assoc",
-"stname",
-"premtype",
-"pf_hands",
-"cs_lkout",
-"ac_incid",
-"post",
-"ac_proxm",
-"cs_furtv",
-"cs_cloth",
-"sumoffen"
-]
-}
-```
 
 
 #### Totals
@@ -160,7 +89,7 @@ http://api.occupy-data.org/stopandfrisk/v1/haircolr/WH/age/$gt=10
 
 You can also filter with ORs by repeating a column twice anywhere in the URL.
 
-  So http://api.occupy-data.org/stopandfrisk/v1/haircolr/WH/age/41/haircolr/BK/haircolr/BR shows the precincts in which there are any 41 year olds with either white, black or brown hair.
+So http://api.occupy-data.org/stopandfrisk/v1/haircolr/WH/age/41/haircolr/BK/haircolr/BR shows the precincts in which there are any 41 year olds with either white, black or brown hair.
 
 
 
@@ -189,7 +118,7 @@ http://api.occupy-data.org/stopandfrisk/v1/datetime/$between=2009:2010
 
 http://api.occupy-data.org/stopandfrisk/v1/datetime/$between=2009-10-01:dec-07-2009
 
- -- between my October 1 and December 7 in 2009 
+ -- between October 1 and December 7 in 2009 
 
 -- note that the datetime parser is smart enough to understand multiple formats (any machine-formatted datetime string should be unambiguously accepted, as well as some human readable strings like above)
 
