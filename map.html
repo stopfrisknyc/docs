@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title>Example</title>
+  <script type='text/javascript'>
+    var geojson = [];
+    function jsonpdata(data) {
+      for (var i = 0; i < data.results.length; i++) {
+        geojson.push({
+          geometry: {
+            type: 'Point',
+            coordinates: data.results[i].loc
+          },
+          properties: {
+            title: data.results[i].race,
+            description: data.results[i].sex,
+			'marker-symbol': 'police',
+	        'marker-color': '#2D6F83',
+          }
+        });
+      }
+    };
+  </script>
+  <script src='http://api.occupy-data.org/stopandfrisk/v1/loc/$near=-73.88:40.78:2.3/race/W?results&value=loc&value=race&value=sex&callback=jsonpdata'></script>
+  <script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.6/mapbox.js'></script>
+  <link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.6/mapbox.css' rel='stylesheet' />
+  <style>
+    body { margin:0; padding:0; }
+    #map { position:absolute; top:0; bottom:0; width:100%; }
+  </style>
+</head>
+<body>
+<div id='map'></div>
+<script>
+  mapbox.auto('map', 'herwig.map-dlouakvr', function(m) {
+    var markerLayer = mapbox.markers.layer().features(geojson);
+    m.addLayer(markerLayer);
+    m.centerzoom({lon:-73.9109, lat:40.7858}, 12);
+    mapbox.markers.interaction(markerLayer);
+    mapbox.markers.extent();
+  });
+</script>
+</body>
+</html>
