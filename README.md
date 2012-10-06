@@ -15,6 +15,8 @@ Documentation for the stop and frisk data API
 
 ### Description
 
+Code for the API: https://github.com/boldprogressives/mongo-spreadsheet-api, licensed under GPLv3 license.
+
 
 ### Usage
 
@@ -126,11 +128,9 @@ You can limit the "details" resource to particular columns by appending one or m
 For example, http://api.occupy-data.org/stopandfrisk/v1/haircolr/WH?results&value=age&value=eyecolor&value=loc just returns the age, eye color, and lat/lng of all the white-haired people in the database.
 
 
-
-
 #### Nested results
 
-You can also nest resources to add multiple filters.  
+You can also nest resources to add multiple filters.
 
 So the URL http://api.occupy-data.org/stopandfrisk/v1/haircolr/WH/age is back to a new "overview" resource that tells you all the possible ages of the white-haired people in the database; 
 
@@ -170,6 +170,40 @@ http://api.occupy-data.org/stopandfrisk/v1/loc/$near=-73.88:40.78:1.3/?results&v
 
 Returns All results within 1.3 miles of (-73.88, 40.78)
 
+http://api.occupy-data.org/stopandfrisk/v1/loc/$near=-73.88:40.78:2 
+
+-- note that this returns 100 results 
+-- that's the limit for a geospatial query, so if you have 100 results returned you probably should use a smaller radius.
+
+#### Time/Date Queries
+
+http://api.occupy-data.org/stopandfrisk/v1/datetime_time/$lt=0600
+
+-- stop-and-frisks that occurred before 6 AM (meaning between midnight and 6 AM)
+
+http://api.occupy-data.org/stopandfrisk/v1/datetime_time/$between=0600:0900
+
+-- between 6 AM and 9 AM, inclusive
+
+http://api.occupy-data.org/stopandfrisk/v1/datetime/$between=2009:2010
+
+http://api.occupy-data.org/stopandfrisk/v1/datetime/$between=2009-10-01:dec-07-2009
+
+ -- between my October 1 and December 7 in 2009 
+
+-- note that the datetime parser is smart enough to understand multiple formats (any machine-formatted datetime string should be unambiguously accepted, as well as some human readable strings like above)
+
+
+
+#### Form-based Queries
+
+```
+Base URL + column of interest + '/?results=&html=&results_per_page=100&page=0'
+```
+
+http://api.occupy-data.org/stopandfrisk/v1/datetime/?results=&html=&results_per_page=100&page=0
+
+http://api.occupy-data.org/stopandfrisk/v1/datetime/?results=&html=&results_per_page=100&page=0
 
 
 
