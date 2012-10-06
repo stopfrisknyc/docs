@@ -29,7 +29,13 @@ There are essentially three kinds of API endpoints: overview, totals, and detail
 http://api.occupy-data.org/stopandfrisk/v1/ 
 ```
 
-This just gives an overview of the data, including the total number of records in the system, and all the columns that exist on the data
+ The base URL returns the columns that are indexed in the database. These are the only columns that you can use to "begin" a search.
+
+You can also view columns for other queries, like http://api.occupy-data.org/stopandfrisk/v1/haircolr/BK
+
+In this case, it returns all the columns, whether or not they're indexed.
+
+In general, the "columns" data is always used to determine what columns are available for filtering the CURRENT results by. For the base URL it has to be an indexed column, but for other URLs it can be any column (with a few edge-case exceptions, like if you've already used that column with an operator)
 
 ```
 {
@@ -104,12 +110,6 @@ columns: [
 ```
 
 
-
-#### Overview
-
-An "overview" resource which tells you what values exist for a given column, within the set of results you've specified.  For example, http://api.occupy-data.org/stopandfrisk/v1/haircolr lists all the possible hair colors in the database.
-
-
 #### Totals
 
 A "totals" resource which lets you filter to a particular value of a particular column, and tells you how many records exist within that query.  For example, http://api.occupy-data.org/stopandfrisk/v1/haircolr/WH tells you how many white-haired people are in the database.
@@ -153,7 +153,7 @@ Operators
 Base URL + column to query + '/' + $operator + '=' + value
 ```
 
-http://api.occupy-data.org/stopandfrisk/v1/haircolr/WH/age/$gt/10
+http://api.occupy-data.org/stopandfrisk/v1/haircolr/WH/age/$gt=10
 
 
 #### OR 
