@@ -57,13 +57,13 @@ A "totals" resource which lets you filter to a particular value of a particular 
 
 #### Details
 
-A "details" resource which lets you return the actual detailed results you've filtered to.  You just do this by appending "?detail" to the previous URL.  So, for example: http://api.occupy-data.org/v1/haircolr/WH/?results=&html=&results_per_page=100&page=0 gives you all the full data about all the white-haired people in the database.
+A "details" resource which lets you return the actual detailed results you've filtered to.  You just do this by appending "?results&results_per_page=100" to the previous URL.  So, for example: http://api.occupy-data.org/v1/haircolr/WH/?results=&html=&results_per_page=100 gives you all the full data about all the white-haired people in the database.
 
 #### Limiting Queries
 
 You can limit the "details" resource to particular columns by appending one or more "&value=" strings to the URL.
 
-For example, http://api.occupy-data.org/v1/haircolr/WH?results&value=age&value=eyecolor&value=loc/&html=&results_per_page=100&page=0 just returns the age, eye color, and lat/lng of all the white-haired people in the database.
+For example, http://api.occupy-data.org/v1/haircolr/WH?results&value=age&value=eyecolor&value=loc/&html=&results_per_page=100 just returns the age, eye color, and lat/lng of all the white-haired people in the database.
 
 
 #### Nested results
@@ -72,7 +72,7 @@ You can also nest resources to add multiple filters.
 
 So the URL http://api.occupy-data.org/v1/haircolr/WH/age is back to a new "overview" resource that tells you all the possible ages of the white-haired people in the database; 
 
-http://api.occupy-data.org/v1/haircolr/WH/age/41?results=&html=&results_per_page=100&page=0
+http://api.occupy-data.org/v1/haircolr/WH/age/41?results=&html=&results_per_page=100
 
 shows you all the 41-year-old white haired people
 
@@ -105,26 +105,26 @@ Returns All results within 1.3 miles of (-73.88, 40.78)
 
 http://api.occupy-data.org/v1/loc/$near=-73.88:40.78:2 
 
--- note that this returns 100 results 
--- that's the limit for a geospatial query, so if you have 100 results returned you probably should use a smaller radius.
+- note that this returns 100 results 
+- that's the limit for a geospatial query, so if you have 100 results returned you probably should use a smaller radius.
 
 #### Time/Date Queries
 
 http://api.occupy-data.org/v1/datetime_time/$lt=0600
 
--- stop-and-frisks that occurred before 6 AM (meaning between midnight and 6 AM)
+- stop-and-frisks that occurred before 6 AM (meaning between midnight and 6 AM)
 
 http://api.occupy-data.org/v1/datetime_time/$between=0600:0900
 
--- between 6 AM and 9 AM, inclusive
+- between 6 AM and 9 AM, inclusive
 
 http://api.occupy-data.org/v1/datetime/$between=2009:2010
 
 http://api.occupy-data.org/v1/datetime/$between=2009-10-01:dec-07-2009
 
- -- between October 1 and December 7 in 2009 
+- between October 1 and December 7 in 2009 
 
--- note that the datetime parser is smart enough to understand multiple formats (any machine-formatted datetime string should be unambiguously accepted, as well as some human readable strings like above)
+- note that the datetime parser is smart enough to understand multiple formats (any machine-formatted datetime string should be unambiguously accepted, as well as some human readable strings like above)
 
 
 
