@@ -5772,3 +5772,5 @@ a.badge:hover {
 .affix {
   position: fixed;
 }
+
+div.hero-unit { width:100%;  padding:20px; }

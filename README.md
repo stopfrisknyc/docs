@@ -17,6 +17,9 @@ Documentation for the stop and frisk data API
 
 http://api.occupy-data.org/v1/haircolr/WH/age/41/?results&per_page=100&html
 
+### JSON Response
+
+The API supports a json response by default. For some visitors unfamiliar with JSON, you may want to install JSONview, for [Chrome](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc) or [Firefox](https://addons.mozilla.org/en-US/firefox/addon/jsonview/)
 
 ### Description
 
