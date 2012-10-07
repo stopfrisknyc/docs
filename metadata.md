@@ -1,4 +1,3 @@
-
 ### Column Names
 
 Variable | Label

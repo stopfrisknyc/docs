@@ -18,13 +18,13 @@ Documentation for the stop and frisk data API
 http://api.occupy-data.org/stopandfrisk/v1/haircolr/WH/age/41/?results&per_page=100&html
 
 
-## Metadata 
-
-See [column name and value label descriptions from the source databases here](https://github.com/stopfrisknyc/docs/blob/gh-pages/metadata.md)
-
 ### Description
 
 Code for the API: https://github.com/boldprogressives/mongo-spreadsheet-api, licensed under GPLv3 license.
+
+### Metadata
+
+- [Field Values and Column Definitions](https://github.com/stopfrisknyc/docs#column-definitions-and-possible-field-results-for-querying)
 
 
 ### Usage
