@@ -13,6 +13,10 @@
 
 Documentation for the stop and frisk data API
 
+### HTML Response
+
+http://api.occupy-data.org/stopandfrisk/v1/haircolr/WH/age/41/?results&per_page=100&html
+
 
 ## Metadata 
 
