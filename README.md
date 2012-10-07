@@ -73,8 +73,6 @@ For example, http://api.occupy-data.org/v1/haircolr/WH?results&value=age&value=e
 
 You can also nest resources to add multiple filters.
 
-So the URL http://api.occupy-data.org/v1/haircolr/WH/age is back to a new "overview" resource that tells you all the possible ages of the white-haired people in the database; 
-
 http://api.occupy-data.org/v1/haircolr/WH/age/41?results&html=&results_per_page=100
 
 shows you all the 41-year-old white haired people
