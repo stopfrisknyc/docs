@@ -23,7 +23,11 @@ The API supports a json response by default. For some visitors unfamiliar with J
 
 ### Description
 
-[WHY?](https://github.com/stopfrisknyc/docs/blob/gh-pages/why.md#washington-post-politics-api)
+An API to access the New York Police Department (NYPD) Stop, Question, and Frisk Databases from 2003-2011, which were previously only available in proprietary database formats. Data elements include searches, stops, frisks, and the use of force, as well as demographic information about the individuals stopped under the policy.
+
+Civil Rights and Criminal Justice are not included by the Washington Post Issue Engine API among "the 18 most important issues of the election." Our data suggest that they should be. In the first three months of 2012, 203,500 New Yorkers were stopped by the police. 181,457 were totally innocent (89 percent); 108,097 were black (54 percent); 69,043 were Latino (33 percent); 18,387 were white (9 percent).
+
+This project developed as part of the Washington Post, NPR, and Sunlight Foundation's Election Hackathon from October 6-7, 2012. It reflects the work of multiple individuals from many organizations across many hackathons.
 
 Code for the API: https://github.com/boldprogressives/mongo-spreadsheet-api, licensed under GPLv3 license.
 
@@ -32,11 +36,15 @@ Code for the API: https://github.com/boldprogressives/mongo-spreadsheet-api, lic
 - [Field Values and Column Definitions](https://github.com/stopfrisknyc/docs#column-definitions-and-possible-field-results-for-querying)
 
 
+### [Try it out](http://api.occupy-data.org/v1/?results&value=crossst&value=age&value=race&value=crimsusp&value=sex&value=build&value=frisked&html=&results_per_page=100)
+
+
 ### Usage
 
 
 The data api is structured on RESTful semantics rather than SQL semantics. 
 There are essentially three kinds of API endpoints: overview, totals, and details. 
+
 
 
 #### Base URL
@@ -75,7 +83,7 @@ You can also nest resources to add multiple filters.
 
 http://api.occupy-data.org/v1/haircolr/WH/age/41?results&html=&results_per_page=100
 
-shows you all the 41-year-old white haired people
+shows you all the 41-year-old white-haired people
 
 Operators
 
@@ -96,7 +104,7 @@ http://api.occupy-data.org/v1/haircolr/WH/age/$gt=10
 
 You can also filter with ORs by repeating a column twice anywhere in the URL.
 
-So http://api.occupy-data.org/v1/haircolr/WH/age/41/haircolr/BK/haircolr/BR shows the precincts in which there are any 41 year olds with either white, black or brown hair.
+So http://api.occupy-data.org/v1/haircolr/WH/age/41/haircolr/BK/haircolr/BR shows the precincts in which there are any 41-year-olds with either white, black or brown hair.
 
 #### Geospatial Queries
 
