@@ -3,270 +3,270 @@
 
 Variable | Label
 --- | ---- |
-Year | Year of Stop (Ccyy)
-Pct | Precinct of Stop (from 1 to 123)
-Ser_Num | Uf250 Serial Number
-Datestop | Date of Stop (Mm-Dd-Yyyy)
-Timestop | Time of Stop (Hh:Mm)
-Recstat | Record Status
-Inout | Was Stop Inside or Outside ?
-Trhsloc | Was Location Housing or Transit Authority ?
-Perobs | Period of Observation (Mmm)
-Crimsusp | Crime Suspected
-Perstop | Period of Stop (Mmm)
-Typeofid | Stopped Person's Identification Type
-Explnstp | Did Officer Explain Reason for Stop ?
-Othpers | Were Other Persons Stopped, Questioned or Frisked ?
-Arstmade | Was an Arrest Made ?
-Arstoffn | Offense Suspect Arrested for
-Sumissue | Was a Summons Issued ?
-Sumoffen | Offense Suspect Was Summonsed for
-Compyear | Complaint Year (if Complaint Report Prepared)
-Comppct | Complaint Precinct (if Complaint Report Prepared)
-Offunif | Was Officer in Uniform ?
-Officrid | Id Card Provided by Officer (if Not in Uniform)
-Frisked | Was Suspect Frisked ?
-Searched | Was Suspect Searched ?
-Contrabn | Was Contraband Found on Suspect ?
-Adtlrept | Were Additional Reports Prepared ?
-Pistol | Was a Pistol Found on Suspect ?
-Riflshot | Was a Rifle Found on Suspect ?
-Asltweap | Was an Assault Weapon Found on Suspect ?
-Knifcuti | Was a Knife or Cutting Instrument Found on Suspect ?
-Machgun | Was a Machine Gun Found on Suspect ?
-Othrweap | Was Another Type of Weapon Found on Suspect
-Pf_Hands | Physical Force Used by Officer - Hands
-Pf_Wall | Physical Force Used by Officer - Suspect on Ground
-Pf_Grnd | Physical Force Used by Officer - Suspect Against Wall
-Pf_Drwep | Physical Force Used by Officer - Weapon Drawn
-Pf_Ptwep | Physical Force Used by Officer - Weapon Pointed
-Pf_Baton | Physical Force Used by Officer - Baton
-Pf_Hcuff | Physical Force Used by Officer - Handcuffs
-Pf_Pepsp | Physical Force Used by Officer - Pepper Spray
-Pf_Other | Physical Force Used by Officer - Other
-Radio | Radio Run
-Ac_Rept | Additional Circumstances - Report by Victim/Witness/Officer
-Ac_Inves | Additional Circumstances - Ongoing Investigation
-Rf_Vcrim | Reason for Frisk - Violent Crime Suspected
-Rf_Othsw | Reason for Frisk - Other Suspicion of Weapons
-Ac_Proxm | Additional Circumstances - Proximity to Scene of Offense
-Rf_Attir | Reason for Frisk - Inappropriate Attire for Season
-Cs_Objcs | Reason for Stop - Carrying Suspicious Object
-Cs_Descr | Reason for Stop - Fits a Relevant Description
-Cs_Casng | Reason for Stop - Casing a Victim or Location
-Cs_Lkout | Reason for Stop - Suspect Acting As a Lookout
-Rf_Vcact | Reason for Frisk-  Actions of Engaging in a Violent Crime
-Cs_Cloth | Reason for Stop - Wearing Clothes Commonly Used in a Crime
-Cs_Drgtr | Reason for Stop - Actions Indicative of a Drug Transaction
-Ac_Evasv | Additional Circumstances - Evasive Response to Questioning
-Ac_Assoc | Additional Circumstances - Associating With Known Criminals
-Cs_Furtv | Reason for Stop - Furtive Movements
-Rf_Rfcmp | Reason for Frisk - Refuse to Comply W Officer's Directions
-Ac_Cgdir | Additional Circumstances - Change Direction at Sight of Officer
-Rf_Verbl | Reason for Frisk - Verbal Threats by Suspect
-Cs_Vcrim | Reason for Stop - Actions of Engaging in a Violent Crime
-Cs_Bulge | Reason for Stop - Suspicious Bulge
-Cs_Other | Reason for Stop - Other
-Ac_Incid | Additional Circumstances - Area Has High Crime Incidence
-Ac_Time | Additional Circumstances - Time of Day Fits Crime Incidence
-Rf_Knowl | Reason for Frisk - Knowledge of Suspect's Prior Crim Behav
-Ac_Stsnd | Additional Circumstances - Sights or Sounds of Criminal Activity
-Ac_Other | Additional Circumstances - Other
-Sb_Hdobj | Basis of Search - Hard Object
-Sb_Outln | Basis of Search - Outline of Weapon
-Sb_Admis | Basis of Search - Admission by Suspect
-Sb_Other | Basis of Search - Other
-Repcmd | Reporting Officer's Command (1 to 999)
-Revcmd | Reviewing Officer's Command (1 to 999)
-Rf_Furt | Reason for Frisk - Furtive Movements
-Rf_Bulg | Reason for Frisk - Suspicious Bulge
-Offverb | Verbal Statement Provided by Officer (if Not in Uniform)
-Offshld | Shield Provided by Officer (if Not in Uniform)
-Forceuse | Reason Force Used
-Sex | Suspect's Sex
-Race | Suspect's Race
-Dob | Suspect's Date of Birth (Ccyy-Mm-Dd)
-Age | Suspect's Age
-Ht_Feet | Suspect's Height (Feet)
-Ht_Inch | Suspect's Height (Inches)
-Weight | Suspect's Weight
-Haircolr | Suspect's Haircolor
-Eyecolor | Suspect's Eye Color
-Build | Suspect's Build
-Othfeatr | Suspect's Other Features (Scars, Tatoos Etc.)
-Addrtyp | Person Stop Home Address Type
-Rescode | Location of Stop Resident Code
-Premtype | Location of Stop Premise Type
-Premname | Location of Stop Premise Name
-Addrnum | Location of Stop Address Number
-Stname | Location of Stop Street Name
-Stinter | Location of Stop Intersection
-Crossst | Location of Stop Cross Street
-Aptnum | Location of Stop Apt Number
-City | Location of Stop City
-State | Location of Stop State
-Zip | Location of Stop Zip Code
-Addrpct | Location of Stop Address Precinct
-Sector | Location of Stop Sector
-Beat | Location of Stop Beat
-Post | Location of Stop Post
-Xcoord | Location of Stop X Coord
-Ycoord | Location of Stop Y Coord
-Dettypcm | Details Types Code
-Linecm | Count >1 Additional Details
-Detailcm | Crime Code Description
+year | Year of Stop (Ccyy)
+pct | Precinct of Stop (from 1 to 123)
+ser_num | Uf250 Serial Number
+datestop | Date of Stop (Mm-Dd-Yyyy)
+timestop | Time of Stop (Hh:Mm)
+recstat | Record Status
+inout | Was Stop Inside or Outside ?
+trhsloc | Was Location Housing or Transit Authority ?
+perobs | Period of Observation (Mmm)
+crimsusp | Crime Suspected
+perstop | Period of Stop (Mmm)
+typeofid | Stopped Person's Identification Type
+explnstp | Did Officer Explain Reason for Stop ?
+othpers | Were Other Persons Stopped, Questioned or Frisked ?
+arstmade | Was an Arrest Made ?
+arstoffn | Offense Suspect Arrested for
+sumissue | Was a Summons Issued ?
+sumoffen | Offense Suspect Was Summonsed for
+compyear | Complaint Year (if Complaint Report Prepared)
+comppct | Complaint Precinct (if Complaint Report Prepared)
+offunif | Was Officer in Uniform ?
+officrid | Id Card Provided by Officer (if Not in Uniform)
+frisked | Was Suspect Frisked ?
+searched | Was Suspect Searched ?
+contrabn | Was Contraband Found on Suspect ?
+adtlrept | Were Additional Reports Prepared ?
+pistol | Was a Pistol Found on Suspect ?
+riflshot | Was a Rifle Found on Suspect ?
+asltweap | Was an Assault Weapon Found on Suspect ?
+knifcuti | Was a Knife or Cutting Instrument Found on Suspect ?
+machgun | Was a Machine Gun Found on Suspect ?
+othrweap | Was Another Type of Weapon Found on Suspect
+pf_hands | Physical Force Used by Officer - Hands
+pf_wall | Physical Force Used by Officer - Suspect on Ground
+pf_grnd | Physical Force Used by Officer - Suspect Against Wall
+pf_drwep | Physical Force Used by Officer - Weapon Drawn
+pf_ptwep | Physical Force Used by Officer - Weapon Pointed
+pf_baton | Physical Force Used by Officer - Baton
+pf_hcuff | Physical Force Used by Officer - Handcuffs
+pf_pepsp | Physical Force Used by Officer - Pepper Spray
+pf_other | Physical Force Used by Officer - Other
+radio | Radio Run
+ac_rept | Additional Circumstances - Report by Victim/Witness/Officer
+ac_inves | Additional Circumstances - Ongoing Investigation
+rf_vcrim | Reason for Frisk - Violent Crime Suspected
+rf_othsw | Reason for Frisk - Other Suspicion of Weapons
+ac_proxm | Additional Circumstances - Proximity to Scene of Offense
+rf_attir | Reason for Frisk - Inappropriate Attire for Season
+cs_objcs | Reason for Stop - Carrying Suspicious Object
+cs_descr | Reason for Stop - Fits a Relevant Description
+cs_casng | Reason for Stop - Casing a Victim or Location
+cs_lkout | Reason for Stop - Suspect Acting As a Lookout
+rf_vcact | Reason for Frisk-  Actions of Engaging in a Violent Crime
+cs_cloth | Reason for Stop - Wearing Clothes Commonly Used in a Crime
+cs_drgtr | Reason for Stop - Actions Indicative of a Drug Transaction
+ac_evasv | Additional Circumstances - Evasive Response to Questioning
+ac_assoc | Additional Circumstances - Associating With Known Criminals
+cs_furtv | Reason for Stop - Furtive Movements
+rf_rfcmp | Reason for Frisk - Refuse to Comply W Officer's Directions
+ac_cgdir | Additional Circumstances - Change Direction at Sight of Officer
+rf_verbl | Reason for Frisk - Verbal Threats by Suspect
+cs_vcrim | Reason for Stop - Actions of Engaging in a Violent Crime
+cs_bulge | Reason for Stop - Suspicious Bulge
+cs_other | Reason for Stop - Other
+ac_incid | Additional Circumstances - Area Has High Crime Incidence
+ac_time | Additional Circumstances - Time of Day Fits Crime Incidence
+rf_knowl | Reason for Frisk - Knowledge of Suspect's Prior Crim Behav
+ac_stsnd | Additional Circumstances - Sights or Sounds of Criminal Activity
+ac_other | Additional Circumstances - Other
+sb_hdobj | Basis of Search - Hard Object
+sb_outln | Basis of Search - Outline of Weapon
+sb_admis | Basis of Search - Admission by Suspect
+sb_other | Basis of Search - Other
+repcmd | Reporting Officer's Command (1 to 999)
+revcmd | Reviewing Officer's Command (1 to 999)
+rf_furt | Reason for Frisk - Furtive Movements
+rf_bulg | Reason for Frisk - Suspicious Bulge
+offverb | Verbal Statement Provided by Officer (if Not in Uniform)
+offshld | Shield Provided by Officer (if Not in Uniform)
+forceuse | Reason Force Used
+sex | Suspect's Sex
+race | Suspect's Race
+dob | Suspect's Date of Birth (Ccyy-Mm-Dd)
+age | Suspect's Age
+ht_feet | Suspect's Height (Feet)
+ht_inch | Suspect's Height (Inches)
+weight | Suspect's Weight
+haircolr | Suspect's Haircolor
+eyecolor | Suspect's Eye Color
+build | Suspect's Build
+othfeatr | Suspect's Other Features (Scars, Tatoos Etc.)
+addrtyp | Person Stop Home Address Type
+rescode | Location of Stop Resident Code
+premtype | Location of Stop Premise Type
+premname | Location of Stop Premise Name
+addrnum | Location of Stop Address Number
+stname | Location of Stop Street Name
+stinter | Location of Stop Intersection
+crossst | Location of Stop Cross Street
+aptnum | Location of Stop Apt Number
+city | Location of Stop City
+state | Location of Stop State
+zip | Location of Stop Zip Code
+addrpct | Location of Stop Address Precinct
+sector | Location of Stop Sector
+beat | Location of Stop Beat
+post | Location of Stop Post
+xcoord | Location of Stop X Coord
+ycoord | Location of Stop Y Coord
+dettypcm | Details Types Code
+linecm | Count >1 Additional Details
+detailcm | Crime Code Description
 
 
 ### Value Labels
 
-Field Name | Value | Label
+field name | Value | Label
 --- | --- | --- |
-Inout | I | Inside
+inout | I | Inside
  | O | Outside
-Trhsloc |   | Neither
+trhsloc |   | Neither
  | H | Housing
  | T | Transit
-Typeofid | O | Other
+typeofid | O | Other
  | P | Photo
  | R | Refused
  | V | Verbal
-Explnstp | N | No
+explnstp | N | No
  | Y | Yes
-Othpers | N | No
+othpers | N | No
  | Y | Yes
-Arstmade | N | No
+arstmade | N | No
  | Y | Yes
-Sumissue | N | No
+sumissue | N | No
  | Y | Yes
-Offunif | N | No
+offunif | N | No
  | Y | Yes
-Officrid |   | Not Listed
+officrid |   | Not Listed
  | 0 | No
  | I | Id
-Frisked | N | No
+frisked | N | No
  | Y | Yes
-Searched | N | No
+searched | N | No
  | Y | Yes
-Contrabn | N | No
+contrabn | N | No
  | Y | Yes
-Adtlrept | N | No
+adtlrept | N | No
  | Y | Yes
-Pistol | N | No
+pistol | N | No
  | Y | Yes
-Riflshot | N | No
+riflshot | N | No
  | Y | Yes
-Asltweap | N | No
+asltweap | N | No
  | Y | Yes
-Knifcuti | N | No
+knifcuti | N | No
  | Y | Yes
-Machgun | N | No
+machgun | N | No
  | Y | Yes
-Othrweap | N | No
+othrweap | N | No
  | Y | Yes
-Pf_Hands | N | No
+pf_hands | N | No
  | Y | Yes
-Pf_Wall | N | No
+pf_wall | N | No
  | Y | Yes
-Pf_Grnd | N | No
+pf_grnd | N | No
  | Y | Yes
-Pf_Drwep | N | No
+pf_drwep | N | No
  | Y | Yes
-Pf_Ptwep | N | No
+pf_ptwep | N | No
  | Y | Yes
-Pf_Baton | N | No
+pf_baton | N | No
  | Y | Yes
-Pf_Hcuff | N | No
+pf_hcuff | N | No
  | Y | Yes
-Pf_Pepsp | N | No
+pf_pepsp | N | No
  | Y | Yes
-Pf_Other | N | No
+pf_other | N | No
  | Y | Yes
-Radio | N | No
+radio | N | No
  | Y | Yes
-Ac_Rept | N | No
+ac_rept | N | No
  | Y | Yes
-Ac_Inves | N | No
+ac_inves | N | No
  | Y | Yes
-Rf_Vcrim | N | No
+rf_vcrim | N | No
  | Y | Yes
-Rf_Othsw | N | No
+rf_othsw | N | No
  | Y | Yes
-Ac_Proxm | N | No
+ac_proxm | N | No
  | Y | Yes
-Rf_Attir | N | No
+rf_attir | N | No
  | Y | Yes
-Cs_Objcs | N | No
+cs_objcs | N | No
  | Y | Yes
-Cs_Descr | N | No
+cs_descr | N | No
  | Y | Yes
-Cs_Casng | N | No
+cs_casng | N | No
  | Y | Yes
-Cs_Lkout | N | No
+cs_lkout | N | No
  | Y | Yes
-Rf_Vcact | N | No
+rf_vcact | N | No
  | Y | Yes
-Cs_Cloth | N | No
+cs_cloth | N | No
  | Y | Yes
-Cs_Drgtr | N | No
+cs_drgtr | N | No
  | Y | Yes
-Ac_Evasv | N | No
+ac_evasv | N | No
  | Y | Yes
-Ac_Assoc | N | No
+ac_assoc | N | No
  | Y | Yes
-Cs_Furtv | N | No
+cs_furtv | N | No
  | Y | Yes
-Rf_Rfcmp | N | No
+rf_rfcmp | N | No
  | Y | Yes
-Ac_Cgdir | N | No
+ac_cgdir | N | No
  | Y | Yes
-Rf_Verbl | N | No
+rf_verbl | N | No
  | Y | Yes
-Cs_Vcrim | N | No
+cs_vcrim | N | No
  | Y | Yes
-Cs_Bulge | N | No
+cs_bulge | N | No
  | Y | Yes
-Cs_Other | N | No
+cs_other | N | No
  | Y | Yes
-Ac_Incid | N | No
+ac_incid | N | No
  | Y | Yes
-Ac_Time | N | No
+ac_time | N | No
  | Y | Yes
-Rf_Knowl | N | No
+rf_knowl | N | No
  | Y | Yes
-Ac_Stsnd | N | No
+ac_stsnd | N | No
  | Y | Yes
-Ac_Other | N | No
+ac_other | N | No
  | Y | Yes
-Sb_Hdobj | N | No
+sb_hdobj | N | No
  | Y | Yes
-Sb_Outln | N | No
+sb_outln | N | No
  | Y | Yes
-Sb_Admis | N | No
+sb_admis | N | No
  | Y | Yes
-Sb_Other | N | No
+sb_other | N | No
  | Y | Yes
-Rf_Furt | N | No
+rf_furt | N | No
  | Y | Yes
-Rf_Bulg | N | No
+rf_bulg | N | No
  | Y | Yes
-Offverb |   | Not Listed
+offverb |   | Not Listed
  | 0 | No
  | V | Verbal
-Offshld |   | Not Listed
+offshld |   | Not Listed
  | 0 | No
  | S | Shield
-Forceuse |  | Not Listed
+forceuse |  | Not Listed
  | Ds | Defense of Self
  | Do | Defense of Other
  | or | Overcome Resistence
  | Ot | Other
  | Sf | Suspected Flight
  | Sw | Suspected Weapon
-Sex |   | Not Listed
+sex |   | Not Listed
  | F | Female
  | M | Male
  | Z | Unknown
-Race |   | Not Listed
+race |   | Not Listed
  | a | Asian/Pacific Islander
  | B | Black
  | I | American Indian/Alaskan Native
@@ -275,7 +275,7 @@ Race |   | Not Listed
  | W | White
  | X | Unknown
  | Z | Other
-Haircolr |   | Not Listed
+haircolr |   | Not Listed
  | Ba | Bald
  | Bk | Black
  | Bl | Blond
@@ -289,7 +289,7 @@ Haircolr |   | Not Listed
  | Wh | White
  | Xx | Unknown
  | Zz | Other
-Eyecolor |   | Not Listed
+eyecolor |   | Not Listed
  | Bk | Black
  | Bl | Blue
  | Br | Brown
@@ -302,7 +302,7 @@ Eyecolor |   | Not Listed
  | Vi | Violet
  | Xx | Unknown
  | Zz | Other
-Build |   | Not Listed
+build |   | Not Listed
  | H | Heavy
  | M | Medium
  | T | Thin
