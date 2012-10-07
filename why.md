@@ -24,12 +24,12 @@ Washington Post's the [18 important issues of the election](http://developer.was
 
 # Stop and Frisk
 
- > In the first three months of 2012, 203,500 New Yorkers were stopped by the police.
- > - 181,457 were totally innocent (89 percent).
- > - 108,097 were black (54 percent).
- > - 69,043 were Latino (33 percent).
- > - 18,387 were white (9 percent).
-      - [NYCLU](http://www.nyclu.org/issues/racial-justice/stop-and-frisk-practices)
+> In the first three months of 2012, 203,500 New Yorkers were stopped by the police.
+> - 181,457 were totally innocent (89 percent).
+> - 108,097 were black (54 percent).
+> - 69,043 were Latino (33 percent).
+> - 18,387 were white (9 percent).
+- [NYCLU](http://www.nyclu.org/issues/racial-justice/stop-and-frisk-practices)
  
 # Project Ideas
 
@@ -41,13 +41,13 @@ Washington Post's the [18 important issues of the election](http://developer.was
 - ~2.6 million records contain precise geographical coordinates 
 
 
-	### Background Reading
+### Background Reading
 
-	 - [NYCLU Report on 2011 Database](http://www.nyclu.org/files/publications/NYCLU_2011_Stop-and-Frisk_Report.pdf) (pdf)
-	 - [Center for Constitutional Rights](http://ccrjustice.org/ourcases/current-cases/floyd%2C-et-al.-v.-city-new-york%2C-et-al.) Background on how the data became open
+- [NYCLU Report on 2011 Database](http://www.nyclu.org/files/publications/NYCLU_2011_Stop-and-Frisk_Report.pdf) (pdf)
+- [Center for Constitutional Rights](http://ccrjustice.org/ourcases/current-cases/floyd%2C-et-al.-v.-city-new-york%2C-et-al.) Background on how the data became open
 
-	### Resources
+### Resources
 
-	 - [Original NYPD Database Files](http://www.nyc.gov/html/nypd/html/analysis_and_planning/stop_question_and_frisk_report.shtml) - Note: they are offered only as portable SPSS database files (.por extensions).
-	 - [NYPD Data Dictionary]() - .zip file with an XLS spreadsheet for each year
-	 - [NYCLU-provided Data Dictionary](http://www.nyclu.org/content/stop-and-frisk-database)
+- [Original NYPD Database Files](http://www.nyc.gov/html/nypd/html/analysis_and_planning/stop_question_and_frisk_report.shtml) - Note: they are offered only as portable SPSS database files (.por extensions).
+- [NYPD Data Dictionary]() - .zip file with an XLS spreadsheet for each year
+- [NYCLU-provided Data Dictionary](http://www.nyclu.org/content/stop-and-frisk-database)
