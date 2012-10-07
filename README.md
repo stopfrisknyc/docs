@@ -57,7 +57,7 @@ A "totals" resource which lets you filter to a particular value of a particular 
 
 #### Details
 
-A "details" resource which lets you return the actual detailed results you've filtered to.  You just do this by appending "?results&results_per_page=100" to the previous URL.  So, for example: http://api.occupy-data.org/v1/haircolr/WH/?results=&html=&results_per_page=100 gives you all the full data about all the white-haired people in the database.
+A "details" resource which lets you return the actual detailed results you've filtered to.  You just do this by appending "?results&results_per_page=100" to the previous URL.  So, for example: http://api.occupy-data.org/v1/haircolr/WH/?results&html=&results_per_page=100 gives you all the full data about all the white-haired people in the database.
 
 #### Limiting Queries
 
@@ -72,7 +72,7 @@ You can also nest resources to add multiple filters.
 
 So the URL http://api.occupy-data.org/v1/haircolr/WH/age is back to a new "overview" resource that tells you all the possible ages of the white-haired people in the database; 
 
-http://api.occupy-data.org/v1/haircolr/WH/age/41?results=&html=&results_per_page=100
+http://api.occupy-data.org/v1/haircolr/WH/age/41?results&html=&results_per_page=100
 
 shows you all the 41-year-old white haired people
 
@@ -134,9 +134,8 @@ http://api.occupy-data.org/v1/datetime/$between=2009-10-01:dec-07-2009
 Base URL + column of interest + '/?results=&html=&results_per_page=100&page=0'
 ```
 
-http://api.occupy-data.org/v1/datetime/?results=&html=&results_per_page=100&page=0
 
-http://api.occupy-data.org/v1/datetime/?results=&html=&results_per_page=100&page=0
+http://api.occupy-data.org/v1/datetime/?results&html&results_per_page=100&page=0
 
 
 ### Column Definitions and Possible Field Results for Querying
