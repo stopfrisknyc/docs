@@ -3,6 +3,8 @@
 
 #### Query
 
+A simple query for the word "frisk" using Washington post's politics API, for Jan, 1 2010, to October 6, 2012, yields just 5 results. 
+
 ```
 http://api.washingtonpost.com/politics/content/v2/politics.json?query=frisk&startdate=20100101&enddate=20121006&key=[YOUR KEY HERE]
 ```
