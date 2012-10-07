@@ -119,192 +119,381 @@ detailCM | CRIME CODE DESCRIPTION
 
 ### Value Labels
 
-Field Name | Label
---- | --- |
-inout | INSIDE
- | OUTSIDE
-trhsloc | NEITHER
- | HOUSING
- | TRANSIT
-typeofid | OTHER
- | PHOTO
- | REFUSED
- | VERBAL
-explnstp | NO
- | YES
-othpers | NO
- | YES
-arstmade | NO
- | YES
-sumissue | NO
- | YES
-offunif | NO
- | YES
-officrid | NOT LISTED
- | NO
- | ID
-frisked | NO
- | YES
-searched | NO
- | YES
-contrabn | NO
- | YES
-adtlrept | NO
- | YES
-pistol | NO
- | YES
-riflshot | NO
- | YES
-asltweap | NO
- | YES
-knifcuti | NO
- | YES
-machgun | NO
- | YES
-othrweap | NO
- | YES
-pf_hands | NO
- | YES
-pf_wall | NO
- | YES
-pf_grnd | NO
- | YES
-pf_drwep | NO
- | YES
-pf_ptwep | NO
- | YES
-pf_baton | NO
- | YES
-pf_hcuff | NO
- | YES
-pf_pepsp | NO
- | YES
-pf_other | NO
- | YES
-radio | NO
- | YES
-ac_rept | NO
- | YES
-ac_inves | NO
- | YES
-rf_vcrim | NO
- | YES
-rf_othsw | NO
- | YES
-ac_proxm | NO
- | YES
-rf_attir | NO
- | YES
-cs_objcs | NO
- | YES
-cs_descr | NO
- | YES
-cs_casng | NO
- | YES
-cs_lkout | NO
- | YES
-rf_vcact | NO
- | YES
-cs_cloth | NO
- | YES
-cs_drgtr | NO
- | YES
-ac_evasv | NO
- | YES
-ac_assoc | NO
- | YES
-cs_furtv | NO
- | YES
-rf_rfcmp | NO
- | YES
-ac_cgdir | NO
- | YES
-rf_verbl | NO
- | YES
-cs_vcrim | NO
- | YES
-cs_bulge | NO
- | YES
-cs_other | NO
- | YES
-ac_incid | NO
- | YES
-ac_time | NO
- | YES
-rf_knowl | NO
- | YES
-ac_stsnd | NO
- | YES
-ac_other | NO
- | YES
-sb_hdobj | NO
- | YES
-sb_outln | NO
- | YES
-sb_admis | NO
- | YES
-sb_other | NO
- | YES
-rf_furt | NO
- | YES
-rf_bulg | NO
- | YES
-offverb | NOT LISTED
- | NO
- | VERBAL
-offshld | NOT LISTED
- | NO
- | SHIELD
-forceuse | NOT LISTED
- | DEFENSE OF SELF
- | DEFENSE OF OTHER
- | OVERCOME RESISTENCE
- | OTHER
- | SUSPECTED FLIGHT
- | SUSPECTED WEAPON
-sex | NOT LISTED
- | FEMALE
- | MALE
- | UNKNOWN
-race | NOT LISTED
- | ASIAN/PACIFIC ISLANDER
- | BLACK
- | AMERICAN INDIAN/ALASKAN NATIVE
- | BLACK-HISPANIC
- | WHITE-HISPANIC
- | WHITE
- | UNKNOWN
- | OTHER
-haircolr | NOT LISTED
- | BALD
- | BLACK
- | BLOND
- | BROWN
- | DYED
- | FROSTED
- | GRAY
- | RED
- | SANDY
- | SALT AND PEPPER
- | WHITE
- | UNKNOWN
- | OTHER
-eyecolor | NOT LISTED
- | BLACK
- | BLUE
- | BROWN
- | TWO DIFFERENT
- | GREEN
- | GRAY
- | HAZEL
- | MAROON
- | PINK
- | VIOLET
- | UNKNOWN
- | OTHER
-build | NOT LISTED
- | HEAVY
- | MEDIUM
- | THIN
- | MUSCULAR
- | UNKNOWN
+Field Name | Value | Label
+--- | --- | --- |
+Pct | 1 | 001
+ | 5 | 005 
+ | 6 | 006 
+ | 7 | 007 
+ | 9 | 009 
+ | 10 | 010 
+ | 13 | 013 
+ | 14 | 014 
+ | 17 | 017 
+ | 18 | 018 
+ | 19 | 019 
+ | 20 | 020 
+ | 22 | 022 
+ | 23 | 023 
+ | 24 | 024 
+ | 25 | 025 
+ | 26 | 026 
+ | 28 | 028 
+ | 30 | 030 
+ | 32 | 032 
+ | 33 | 033 
+ | 34 | 034 
+ | 40 | 040 
+ | 41 | 041 
+ | 42 | 042 
+ | 43 | 043 
+ | 44 | 044 
+ | 45 | 045 
+ | 46 | 046 
+ | 47 | 047 
+ | 48 | 048 
+ | 49 | 049 
+ | 50 | 050 
+ | 52 | 052 
+ | 60 | 060 
+ | 61 | 061 
+ | 62 | 062 
+ | 63 | 063 
+ | 66 | 066 
+ | 67 | 067 
+ | 68 | 068 
+ | 69 | 069 
+ | 70 | 070 
+ | 71 | 071 
+ | 72 | 072 
+ | 73 | 073 
+ | 75 | 075 
+ | 76 | 076 
+ | 77 | 077 
+ | 78 | 078 
+ | 79 | 079 
+ | 81 | 081 
+ | 83 | 083 
+ | 84 | 084 
+ | 88 | 088 
+ | 90 | 090 
+ | 94 | 094 
+ | 100 | 100
+ | 101 | 101
+ | 102 | 102
+ | 103 | 103
+ | 104 | 104
+ | 105 | 105
+ | 106 | 106
+ | 107 | 107
+ | 108 | 108
+ | 109 | 109
+ | 110 | 110
+ | 111 | 111
+ | 112 | 112
+ | 113 | 113
+ | 114 | 114
+ | 115 | 115
+ | 120 | 120
+ | 122 | 122
+ | 123 | 123
+inout | I | INSIDE
+ | O | OUTSIDE
+trhsloc |   | NEITHER
+ | H | HOUSING
+ | T | TRANSIT
+typeofid | O | OTHER
+ | P | PHOTO
+ | R | REFUSED
+ | V | VERBAL
+explnstp | N | NO
+ | Y | YES
+othpers | N | NO
+ | Y | YES
+arstmade | N | NO
+ | Y | YES
+sumissue | N | NO
+ | Y | YES
+offunif | N | NO
+ | Y | YES
+officrid |   | NOT LISTED
+ | 0 | NO
+ | I | ID
+frisked | N | NO
+ | Y | YES
+searched | N | NO
+ | Y | YES
+contrabn | N | NO
+ | Y | YES
+adtlrept | N | NO
+ | Y | YES
+pistol | N | NO
+ | Y | YES
+riflshot | N | NO
+ | Y | YES
+asltweap | N | NO
+ | Y | YES
+knifcuti | N | NO
+ | Y | YES
+machgun | N | NO
+ | Y | YES
+othrweap | N | NO
+ | Y | YES
+pf_hands | N | NO
+ | Y | YES
+pf_wall | N | NO
+ | Y | YES
+pf_grnd | N | NO
+ | Y | YES
+pf_drwep | N | NO
+ | Y | YES
+pf_ptwep | N | NO
+ | Y | YES
+pf_baton | N | NO
+ | Y | YES
+pf_hcuff | N | NO
+ | Y | YES
+pf_pepsp | N | NO
+ | Y | YES
+pf_other | N | NO
+ | Y | YES
+radio | N | NO
+ | Y | YES
+ac_rept | N | NO
+ | Y | YES
+ac_inves | N | NO
+ | Y | YES
+rf_vcrim | N | NO
+ | Y | YES
+rf_othsw | N | NO
+ | Y | YES
+ac_proxm | N | NO
+ | Y | YES
+rf_attir | N | NO
+ | Y | YES
+cs_objcs | N | NO
+ | Y | YES
+cs_descr | N | NO
+ | Y | YES
+cs_casng | N | NO
+ | Y | YES
+cs_lkout | N | NO
+ | Y | YES
+rf_vcact | N | NO
+ | Y | YES
+cs_cloth | N | NO
+ | Y | YES
+cs_drgtr | N | NO
+ | Y | YES
+ac_evasv | N | NO
+ | Y | YES
+ac_assoc | N | NO
+ | Y | YES
+cs_furtv | N | NO
+ | Y | YES
+rf_rfcmp | N | NO
+ | Y | YES
+ac_cgdir | N | NO
+ | Y | YES
+rf_verbl | N | NO
+ | Y | YES
+cs_vcrim | N | NO
+ | Y | YES
+cs_bulge | N | NO
+ | Y | YES
+cs_other | N | NO
+ | Y | YES
+ac_incid | N | NO
+ | Y | YES
+ac_time | N | NO
+ | Y | YES
+rf_knowl | N | NO
+ | Y | YES
+ac_stsnd | N | NO
+ | Y | YES
+ac_other | N | NO
+ | Y | YES
+sb_hdobj | N | NO
+ | Y | YES
+sb_outln | N | NO
+ | Y | YES
+sb_admis | N | NO
+ | Y | YES
+sb_other | N | NO
+ | Y | YES
+rf_furt | N | NO
+ | Y | YES
+rf_bulg | N | NO
+ | Y | YES
+offverb |   | NOT LISTED
+ | 0 | NO
+ | V | VERBAL
+offshld |   | NOT LISTED
+ | 0 | NO
+ | S | SHIELD
+forceuse |  | NOT LISTED
+ | DS | DEFENSE OF SELF
+ | DO | DEFENSE OF OTHER
+ | OR | OVERCOME RESISTENCE
+ | OT | OTHER
+ | SF | SUSPECTED FLIGHT
+ | SW | SUSPECTED WEAPON
+sex |   | NOT LISTED
+ | F | FEMALE
+ | M | MALE
+ | Z | UNKNOWN
+race |   | NOT LISTED
+ | A | ASIAN/PACIFIC ISLANDER
+ | B | BLACK
+ | I | AMERICAN INDIAN/ALASKAN NATIVE
+ | P | BLACK-HISPANIC
+ | Q | WHITE-HISPANIC
+ | W | WHITE
+ | X | UNKNOWN
+ | Z | OTHER
+haircolr |   | NOT LISTED
+ | BA | BALD
+ | BK | BLACK
+ | BL | BLOND
+ | BR | BROWN
+ | DY | DYED
+ | FR | FROSTED
+ | GY | GRAY
+ | RD | RED
+ | SN | SANDY
+ | SP | SALT AND PEPPER
+ | WH | WHITE
+ | XX | UNKNOWN
+ | ZZ | OTHER
+eyecolor |   | NOT LISTED
+ | BK | BLACK
+ | BL | BLUE
+ | BR | BROWN
+ | DF | TWO DIFFERENT
+ | GR | GREEN
+ | GY | GRAY
+ | HA | HAZEL
+ | MA | MAROON
+ | PK | PINK
+ | VI | VIOLET
+ | XX | UNKNOWN
+ | ZZ | OTHER
+build |   | NOT LISTED
+ | H | HEAVY
+ | M | MEDIUM
+ | T | THIN
+ | U | MUSCULAR
+ | Z | UNKNOWN
+detailCM | 1 | ABANDONMENT OF A CHILD
+ | 2 | ABORTION
+ | 3 | ABSCONDING
+ | 4 | ADULTERY
+ | 5 | AGGRAVATED ASSAULT
+ | 6 | AGGRAVATED HARASSMENT
+ | 7 | AGGRAVATED SEXUAL ABUSE
+ | 8 | ARSON
+ | 9 | ASSAULT
+ | 10 | AUTO STRIPPING
+ | 11 | BIGAMY
+ | 12 | BRIBE RECEIVING
+ | 13 | BRIBERY
+ | 14 | BURGLARY
+ | 15 | COERCION
+ | 16 | COMPUTER TAMPERING
+ | 17 | COMPUTER TRESPASS
+ | 18 | COURSE OF SEXUAL CONDUCT
+ | 19 | CPSP
+ | 20 | CPW
+ | 21 | CREATING A HAZARD
+ | 22 | CRIMINAL CONTEMPT
+ | 23 | CRIMINAL MISCHIEF
+ | 24 | CRIMINAL POSSESION OF CONTROLLED SUBSTANCE
+ | 25 | CRIMINAL POSSESSION OF COMPUTER MATERIAL
+ | 26 | CRIMINAL POSSESSION OF FORGED INSTRUMENT
+ | 27 | CRIMINAL POSSESSION OF MARIHUANA
+ | 28 | CRIMINAL SALE OF CONTROLLED SUBSTANCE
+ | 29 | CRIMINAL SALE OF MARIHUANA
+ | 30 | CRIMINAL TAMPERING
+ | 31 | CRIMINAL TRESPASS
+ | 32 | CUSTODIAL INTERFERENCE
+ | 33 | EAVES DROPPING
+ | 34 | ENDANGER THE WELFARE OF A CHILD
+ | 35 | ESCAPE
+ | 36 | FALSIFY BUSINESS RECORDS
+ | 37 | FORGERY
+ | 38 | FORGERY OF A VIN
+ | 39 | FORTUNE TELLING
+ | 40 | FRAUD
+ | 41 | FRAUDULENT ACCOSTING
+ | 42 | FRAUDULENT MAKE ELECTRONIC ACCESS DEVICE
+ | 43 | FRAUDULENT OBTAINING A SIGNATURE
+ | 44 | GAMBLING
+ | 45 | GRAND LARCENY
+ | 46 | GRAND LARCENY AUTO
+ | 47 | HARASSMENT
+ | 48 | HAZING
+ | 49 | HINDERING PROSECUTION
+ | 50 | INCEST
+ | 51 | INSURANCE FRAUD
+ | 52 | ISSUE A FALSE CERTIFICATE
+ | 53 | ISSUE A FALSE FINANCIAL STATEMENT
+ | 54 | ISSUING ABORTION ARTICLES
+ | 55 | JOSTLING
+ | 56 | KIDNAPPING
+ | 57 | KILLING OR INJURING A POILCE ANIMAL
+ | 58 | LOITERING
+ | 59 | MAKING GRAFFITI
+ | 60 | MENACING
+ | 61 | MISAPPLICATION OF PROPERTY
+ | 62 | MURDER
+ | 63 | OBSCENITY
+ | 64 | OBSTRUCTING FIREFIGHTING OPERATIONS
+ | 65 | OBSTRUCTING GOVERNMENTAL ADMINISTRATION
+ | 66 | OFFERING A FALSE INSTRUMENT
+ | 67 | OFFICIAL MISCONDUCT
+ | 68 | PETIT LARCENY
+ | 69 | POSSESSION OF BURGLAR TOOLS
+ | 70 | POSSESSION OF EAVES DROPPING DEVICES
+ | 71 | POSSESSION OF GRAFFITI INSTRUMENTS
+ | 72 | PROHIBITED USE OF WEAPON
+ | 73 | PROMOTING SUICIDE
+ | 74 | PROSTITUTION
+ | 75 | PUBLIC DISPLAY OF OFFENSIVE SEXUAL MATERIAL
+ | 76 | PUBLIC LEWDNESS
+ | 77 | RAPE
+ | 78 | RECKLESS ENDANGERMENT
+ | 79 | RECKLESS ENDANGERMENT PROPERTY
+ | 80 | REFUSING TO AID A PEACE OR POLICE OFFICER
+ | 81 | RENT GOUGING
+ | 82 | RESISTING ARREST
+ | 83 | REWARD OFFICIAL MISCONDUCT
+ | 84 | RIOT
+ | 85 | ROBBERY
+ | 86 | SELF ABORTION
+ | 87 | SEXUAL ABUSE
+ | 88 | SEXUAL MISCONDUCT
+ | 89 | SEXUAL PERFORMANCE BY A CHILD
+ | 90 | SODOMY
+ | 91 | SUBSTITUTION OF CHILDREN
+ | 92 | TAMPERING WITH A PUBLIC RECORD
+ | 93 | TAMPERING WITH CONSUMER PRODUCT
+ | 94 | TAMPERING WITH PRIVATE COMMUNICATIONS
+ | 95 | TERRORISM
+ | 96 | THEFT OF SERVICES
+ | 97 | TRADEMARK COUNTERFEITING
+ | 98 | UNLAWFULLY DEALING WITH FIREWORKS
+ | 99 | UNAUTHORIZED RECORDING
+ | 100 | UNAUTHORIZED USE OF A VEHICLE
+ | 101 | UNAUTHORIZED USE OF COMPUTER
+ | 102 | UNLAWFUL ASSEMBLY
+ | 103 | UNLAWFUL DUPLICATION OF COMPUTER MATERIAL
+ | 104 | UNLAWFUL POSSESSION OF RADIO DEVICES
+ | 105 | UNLAWFUL USE OF CREDIT CARD, DEBIT CARD
+ | 106 | UNLAWFUL USE OF SECRET SCIENTIFIC MATERIAL
+ | 107 | UNLAWFUL WEARING A BODY VEST
+ | 108 | UNLAWFULL IMPRISONMENT
+ | 109 | UNLAWFULLY DEALING WITH A CHILD
+ | 110 | UNLAWFULLY USE SLUGS
+ | 111 | VEHICULAR ASSAULT
+ | 112 | OTHER
+ | 113 | FORCIBLE TOUCHING
